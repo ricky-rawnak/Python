@@ -1,0 +1,20 @@
+
+Task 1: Simple Calculator
+Create a program that asks the user for two numbers and performs basic arithmetic operations (addition, subtraction, multiplication, and division) on those numbers. Display the result to the user using the print function.
+
+Task 2: Temperature Converter
+Write a program that converts temperatures between Fahrenheit and Celsius. Prompt the user to enter a temperature in one unit and convert it to the other unit using appropriate formulas. Display the converted temperature using the print function.
+
+Task 3: String Manipulation
+Ask the user to enter their full name. Then, print their name in uppercase, lowercase, and as a title. Use the appropriate string methods to perform these transformations.
+
+Task 4: Age Calculator
+Create a program that asks the user for their birth year and calculates their age. Use the current year to determine the age and display it to the user using the print function.
+
+Task 5: BMI Calculator
+Write a program that calculates the Body Mass Index (BMI) of a person. Prompt the user to enter their height (in meters) and weight (in kilograms). Calculate the BMI using the formula: BMI = weight / (height * height). Print the calculated BMI to the user.
+
+Task 6: Number Guessing Game
+Create a number guessing game where the program generates a random number between 1 and 100. Prompt the user to guess the number and provide feedback if their guess is too high or too low. Continue until the user guesses the correct number. Use the input and print functions to interact with the user.
+
+Remember, these tasks are meant to help you practice and reinforce your understanding of the concepts you've learned. Feel free to modify or expand upon them as you see fit. Good luck with your Python learning journey!
