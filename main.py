@@ -725,7 +725,7 @@ print(dir(math))
 print(math.nan,type(math.nan))
 
 
-'''
+
 
 from main2 import welcome, main2
 import math
@@ -734,9 +734,9 @@ welcome()
 print(main2)
 
 
+'''
 
-
-
+print("github check")
 
 
 
