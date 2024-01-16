@@ -736,7 +736,7 @@ print(main2)
 
 '''
 
-print("github check")
+#------------------------------ if __name__ == "__main__"
 
 
 
