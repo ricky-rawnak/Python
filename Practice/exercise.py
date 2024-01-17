@@ -80,20 +80,40 @@ print(f"You can take home $ {money}")
 '''
 
 #------------------------------ secret code
+import random
+import string
+msg=input("Enter your message: ")
+words=msg.split(" ")
+#coding=True     #encoding
+#coding=False     #decoding
+coding=input("Enter 1 for coding 0 for decoding: ")
+coding=True if (coding=="1") else False
+if(coding):
+    nwords=[]
+    for word in words:
+        if(len(word)>=3):
+            r1 = "".join(random.choices(string.ascii_letters,k=3))
+            r2 = "".join(random.choices(string.ascii_letters,k=3))
+            # r1="dsf"
+            # r2="jkr"
+            msgNew=r1+word[1:]+word[0]+r2
+            #print(word)
+            nwords.append(msgNew)
+        else:
+            nwords.append(word[::-1])
+    print(" ".join(nwords))
+else:
+    nwords=[]
+    for word in words:
+        if(len(word)>=3):
+            msgNew=word[3:-3]
+            msgNew=msgNew[-1]+msgNew[:-1]
+            nwords.append(msgNew)
+        else:
+            nwords.append(word[::-1])
+    print(" ".join(nwords))
 
-# st="I am useless"
-# coding=True
-# if(coding):
-#     pass
-# else:
-#     pass
 
 
-
-# import random
-# def encode(msg):
-#     words=msg.split()
-#     encoded_words=[]
-#     for word in words:
-#         if(len(word)>=3):
+        
         

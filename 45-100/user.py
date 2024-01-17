@@ -1,4 +1,4 @@
-
+'''
 #------------------------------ if __name__ == "__main__"
 
 def greetings():
@@ -6,3 +6,5 @@ def greetings():
 print(__name__)
 if __name__=="__main__":
     greetings()
+
+'''    
