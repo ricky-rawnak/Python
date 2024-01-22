@@ -237,7 +237,7 @@ print(s32.isupper())
 
 
 '''
-
+'''
 s33=("John","Alex","Kevin")
 print("...".join(s33))
 
@@ -275,6 +275,36 @@ print(s39.title())
 
 s40="40h"
 print(s40.zfill(10))
+
+'''
+
+#--------------------- String Formatting
+
+price=33
+txt="The price is {} dollars"
+txt1="The price is {:.2f} dollars"
+
+print(txt.format(price))
+print(txt1.format(price))
+
+myorder="I have a {color}, it is {shape} in look"
+print(myorder.format(color="Red",shape="star"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
