@@ -108,36 +108,3 @@ def myfunc3():
     q="not easy"
 myfunc2()
 print("Local variable "+q)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

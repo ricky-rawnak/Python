@@ -14,6 +14,7 @@ print(p/q)
 print(p%q)
 print(p**q) # 10*10*10
 print(p//q,"\n") # rounds the result down to the nearest whole number
+print(18//4)
 '''
 
 #--------------------- Assignment Operators
@@ -63,7 +64,6 @@ Bitwise XOR(^) Truth Table:
 '''
 q1=q2=q3=q4=q5=q6=q7=q8=q9=q10=q11=q12= 5
 
-
 q1 += 3
 print(q1)
 
@@ -102,6 +102,8 @@ print(q12)
 
 '''
 
+
+
 #--------------------- Comparison  Operators
 
 '''
@@ -130,12 +132,12 @@ print(q1<=p1,"\n")
 
 #--------------------- Identity  Operators
 
-
+'''
 r=["apple","kiwi"]
 s=["apple","kiwi"]
 t=r
-'''
-print(r is t) #same value
+
+print(r is t) #same object
 print(r is s) #Not same object
 print(r == s,"\n") #same value
 
@@ -183,13 +185,14 @@ print("mango" not in r)
 1100(12)
 
 
-#ERO FILL "RIGHT" SHIFT(>>)
+#ZERO FILL "RIGHT" SHIFT(>>)
 1000(8)
 ----
 0010(2)
 
 '''
 
+'''
 print(6 & 3) #2
 print(6 | 3) #7
 print(6 ^ 3) #5
@@ -240,7 +243,7 @@ print(1 or 2 and 3) #1 or true = 1 or 3=1
 print(4 or 5 +10 or 8) #4 or 15 or 8=4
 
 
-
+'''
 
 
 
