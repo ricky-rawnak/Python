@@ -110,6 +110,7 @@ m15.sort(reverse=True)
 print(m15)
 '''
 
+'''
 #->by length
 
 #len
@@ -138,45 +139,177 @@ cars2=['Ford', 'Mitsubishi', 'BMW', 'VW']
 cars2.sort(reverse=True,key=myFunc2)
 print(cars2,"\n")
 
+'''
+
+
+#--------------------- Access Items
+'''
+thislist=["apple","banana","cherry", "orange", "kiwi", "melon", "mango"]
+
+
+print(thislist[1])
+print(thislist[-1])
+print(thislist[2:5])    #cherry orange kiwi
+print(thislist[:4])     #"apple","banana","cherry", "orange"
+print(thislist[2:])     #"cherry", "orange", "kiwi", "melon", "mango"
+print(thislist[-4:-1])  #7-4:7-1 =>3:6 "orange", "kiwi", "melon"
+
+if "apple" in thislist:
+    print("Yes,'apple' is in fruits list")
+
+'''
+
+
+#--------------------- Change Item Value
+
+'''
+thislist1=["apple","banana","cherry", "orange", "kiwi", "melon", "mango"]
+
+thislist1[1]="strawberry"
+print(thislist1,"\n")
+
+
+thislist2=["apple","banana","cherry", "orange", "kiwi", "melon", "mango"]
+thislist2[1:3]=["avacado","strawberry"]
+print(thislist2,"\n")
+
+
+thislist3=["apple","banana","cherry"]
+thislist3[1:2]=["avacado","strawberry"]
+print(thislist3,"\n")
+
+
+thislist4=["apple","banana","cherry"]
+thislist4[1:3]=["strawberry"]
+print(thislist4,"\n")
+
+
+thislist5=["apple","banana","cherry", "orange", "kiwi", "melon", "mango"]
+thislist5.insert(2,"jackfruit")
+print(thislist5,"\n")
+
+
+'''
+
+#--------------------- Add List Items
+'''
+#add an item to the end of the list
+thislist6=["apple","banana","cherry"]
+thislist6.append("strawberry")
+print(thislist6,"\n")
+
+
+thislist7=["apple","banana","cherry"]
+tropical=["mango", "pineapple", "papaya"]
+thislist7.extend(tropical)
+print(thislist7)
+
+
+thislist8=["apple","banana","cherry"]
+thistuple=("kiwi","orange")
+thislist8.extend(thistuple)
+print(thislist8)
+
+'''
+
+#--------------------- Remove List Items
+
+'''
+
+thislist9=["cherry","apple","banana","cherry"]
+thislist9.remove("cherry")
+print(thislist9)
+
+
+thislist10=["apple","banana","cherry"]
+thislist10.pop(0)
+print(thislist10)
+
+
+thislist11=["apple","banana","cherry"]
+thislist11.pop()
+print(thislist11)   #If you do not specify the index, the pop() method removes the last item
+
+
+thislist12=["apple","banana","cherry"]
+#del thislist12[2]
+del thislist12
+#print(thislist12)
+
+
+thislist13=["apple","banana","cherry"]
+thislist13.clear()
+print(thislist13) 
+
+'''
 
 
 
+#--------------------- Loop Lists
+
+'''
+thislist14=["apple","banana","cherry"]
+for x in thislist14:
+    print(x,"\n")
+for i in range(len(thislist14)):
+    print(thislist14[i],"\n")
 
 
+thislist15=["apple","banana","cherry"]
+j=0
+while j<len(thislist15):
+    print(thislist15[j])
+    j=j+1
+
+thislist16=["apple","banana","cherry"]
+[print(x1) for x1 in thislist16]
+
+'''
+
+#--------------------- List Comprehension
 
 
+fruits =["apple","banana","cherry","kiwi","mango"]
+newlist=[]
+for x in fruits:
+    if "a" in x:
+        newlist.append(x)
+print(newlist,"\n")
 
 
+fruits1 =["apple","banana","cherry","kiwi","mango"]
+newlist1=[]
+for y in fruits1:
+    if "e" in y:
+        newlist1.append(y)
+print(newlist1,"\n")
 
 
+fruits2 =["apple","banana","cherry","kiwi","mango"]
+#newlist2=[x1 for x1 in fruits2 if "a" in x1]
+#newlist2=[x1 for x1 in fruits2 if x1!="apple"]
+newlist2=[x1 for x1 in fruits2]
+print(newlist2,"\n")
 
 
+newlist3=[x2 for x2 in range(10)]
+print(newlist3,"\n")
 
 
+newlist4=[x3 for x3 in range(10) if x3<5]
+print(newlist4,"\n")
 
 
+newlist5=[x.upper() for x in fruits]
+print(newlist5,"\n")
 
 
+newlist6=['hello' for x in fruits]
+print(newlist6,"\n")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+newlist7=[x if x!="banana" else "orange" for x in fruits]
+print(newlist7,"\n")
 
 
 
